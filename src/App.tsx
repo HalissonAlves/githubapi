@@ -6,7 +6,7 @@ import Routes from './routes';
 
 const App: React.FC = () => (
   <>
-    <BrowserRouter>
+    <BrowserRouter basename={window.location.pathname || ''}>
       <Routes />
     </BrowserRouter>
     <GlobalStyle />
